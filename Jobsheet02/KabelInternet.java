@@ -11,11 +11,16 @@ public class KabelInternet {
         return panjangMeter * hargaPerMeter;
     }
 
+   public boolean cekKoneksi() {
+        return panjangMeter <= 100;
+    }
+
+    // 5. METHOD 3 (void): Menampilkan seluruh info
     public void displayInfo() {
         System.out.println("Merek          : " + merek);
-        System.out.println("Kategori Kabel : " + kategori);
-        System.out.println("Panjang Kabel  : " + panjangMeter + " meter");
-        System.out.println("Harga / Meter  : Rp " + hargaPerMeter);
+        System.out.println("Kategori       : " + kategori);
+        System.out.println("Panjang        : " + panjangMeter + " meter");
+        System.out.println("Koneksi Bagus? : " + cekKoneksi()); 
         System.out.println("Total Harga    : Rp " + getHitungTotalHarga());
         System.out.println();
     }
