@@ -16,6 +16,9 @@ public class SistemPertanianDemo {
 
         petani1.tambahLahan(lahanSawah);
 
+        // System.out.println("--- info lahan dan petani ---");
+        // System.out.print(petani1.getInfo());
+
         // Aktivitas
         System.out.println("--- Aktivitas ---");
         petani1.tanam();
