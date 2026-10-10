@@ -1,4 +1,4 @@
-package Jobsheet07.praktikum;
+package Jobsheet7.praktikum;
 
 public class Staff extends Karyawan {
     private int lembur;

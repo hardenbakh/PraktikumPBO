@@ -1,4 +1,4 @@
-package Jobsheet07;
+package Jobsheet7;
 
 public class MainKereta {
     public static void main(String[] args) {

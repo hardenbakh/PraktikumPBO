@@ -1,4 +1,4 @@
-package Jobsheet07.tugas;
+package Jobsheet7.tugas;
 
 public class Main {
     public static void main(String[] args) {

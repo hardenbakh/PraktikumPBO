@@ -1,4 +1,4 @@
-package Jobsheet07;
+package Jobsheet7;
 
 public class KeretaApi{
     private String nama;

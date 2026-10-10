@@ -1,4 +1,4 @@
-package Jobsheet07.praktikum;
+package Jobsheet7.praktikum;
 
 public class Manager extends Karyawan {
     private double tunjangan;

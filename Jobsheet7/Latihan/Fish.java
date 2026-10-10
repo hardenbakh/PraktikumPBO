@@ -1,4 +1,4 @@
-package Jobsheet07.Latihan;
+package Jobsheet7.Latihan;
 
 class Ikan {
     public void swim() {

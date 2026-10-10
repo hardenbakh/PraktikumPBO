@@ -1,4 +1,4 @@
-package Jobsheet07;
+package Jobsheet7;
 
 public class Eksekutif extends KeretaApi {
     private String fasilitasTambahan;

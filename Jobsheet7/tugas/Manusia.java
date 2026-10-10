@@ -1,4 +1,4 @@
-package Jobsheet07.tugas;
+package Jobsheet7.tugas;
 
 public class Manusia {
     public void bernafas() {

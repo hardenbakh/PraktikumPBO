@@ -1,4 +1,4 @@
-package Jobsheet07.praktikum;
+package Jobsheet7.praktikum;
 
 public class Utama {
     public static void main(String[] args) {
