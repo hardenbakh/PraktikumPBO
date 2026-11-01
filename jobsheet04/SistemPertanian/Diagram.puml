@@ -1,0 +1,55 @@
+```plantuml
+@startuml
+class Petani {
+    - nama: String
+    - pengalamanTahun: int
+    - daftarLahan: ArrayList<Lahan>
+    + getNama(): String
+    + setNama(nama: String): void
+    + getPengalamanTahun(): int
+    + setPengalamanTahun(pengalamanTahun: int): void
+    + getDaftarLahan(): ArrayList<Lahan>
+    + tambahLahan(lahan: Lahan): void
+    + tanam(): void
+    + panen(): void
+    + jualHasil(): void
+    + getInfo(): String
+}
+
+class Lahan {
+    - luas: double
+    - lokasi: String
+    - peruntukan: String
+    - daftarPetak: ArrayList<Petak>
+    + getLuas(): double
+    + setLuas(luas: double): void
+    + getLokasi(): String
+    + setLokasi(lokasi: String): void
+    + getPeruntukan(): String
+    + setPeruntukan(peruntukan: String): void
+    + getDaftarPetak(): ArrayList<Petak>
+    + tambahPetak(petak: Petak): void
+    + hitungTotalLuas(): double
+    + getInfo(): String
+}
+
+class Petak {
+    - nomorPetak: int
+    - luasPetak: double
+    - statusTanam: boolean
+    + getNomorPetak(): int
+    + setNomorPetak(nomorPetak: int): void
+    + getLuasPetak(): double
+    + setLuasPetak(luasPetak: double): void
+    + isStatusTanam(): boolean
+    + setStatusTanam(statusTanam: boolean): void
+    + tanamBenih(): void
+    + cekStatus(): void
+    + getInfo(): String
+}
+
+' Relasi
+Petani "1" -- "0..*" Lahan : menggarap
+Petani "1" -- "0..*" Lahan : memiliki
+Lahan "1" *-- "1..*" Petak : memiliki petak
+@enduml
