@@ -5,6 +5,14 @@ import java.util.ArrayList;
 public class Demo {
     public static void main(String[] args) {
         Dosen dosen1 = new Dosen("19940201", "Widia, S.kom. M.kom", "199401");
+        
+        Pegawai pegawai1 = dosen1;
+
+        System.out.println(pegawai1.nip);
+        System.out.println(pegawai1.nama);
+        System.out.println(pegawai1.nidn);
+        pegawai1.mengajar();
+
         Dosen dosen2 = new Dosen("19970015", "Muhammad, S.T, M.T", "197001");
         TenagaKependidikan tendik1 = new TenagaKependidikan("19750301", "Aida, A.Md", "TenagaAdminitrasi");
         TenagaKependidikan tendik2 = new TenagaKependidikan("19650304", "Rika, S.T.", "Tenaga Laboratorium");
